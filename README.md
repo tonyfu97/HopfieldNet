@@ -12,6 +12,7 @@ The Hopfield network is an important model for associative memory or content-add
 However, a Hopfield network's memory capacity is limited. The factor that limits this capacity is inherent to Hebbian learning as too many training patterns quickly complicate the energy landscape of the neuronal state space (Folli et al., 2017). Thus, an extensive Hopfield network can easily create so-called spurious attractors, which are erroneous fixed points that arise from training (Hopfield, 1982; Amit et al., 1985). The activation pattern can become trapped in one of those spurious attractors and fails to converge to the intended pattern. An example of a spurious pattern can be seen in **Figure 1**. The letters "T","O","N", and "Y" were encoded in the network's connection matrix. A spurious pattern arose in this matrix, and it was a mixture of the letters "T" and "Y" likely because of how similar the two patterns were. The network had a size of *N = 5 x 5 = 25*, and it memorized *M = 4* patterns. The pattern-to-neuron ratio is *α = M / N = 4 / 25 ~ 0.16*. 
 
 ![Figure 1](1.png)
+
 **Figure 1**. Example of a Spurious Pattern. (A)-(D) Letters "T","O","N", and "Y" were encoded in the network's connection matrix. (E) A spurious pattern that was a mixture of the letter "T" and "Y". See the attached notebook for code. 
 
 
